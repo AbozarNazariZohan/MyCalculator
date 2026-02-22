@@ -10,7 +10,7 @@ namespace SpecialCalculator
     {
         /// <summary>
         ///  fetches tiny math exp from smallest couple parentheses
-        // that has highest priority
+        /// that has highest priority
         /// </summary>
         public static string FindPriorityExp(string exp)
         {
@@ -31,11 +31,17 @@ namespace SpecialCalculator
             return newString;
         }
 
+        /// <summary>
+        // calculates math expression in smallest parentheses 
+        /// </summary>
         public static void SolveInParentheses(string exp)
         {
             int javab = 0;
             int[] javabha = new int[50];
             string tinyStr = FindPriorityExp(exp);
+
+            // the expression that user inserts that has many small math terms
+            // that needs to separate for calculating
             string[] separatedStr = tinyStr.Split();
             // counter of javab ha
             int i = 0;
@@ -43,6 +49,7 @@ namespace SpecialCalculator
             {
                 Console.Write(wordd);
 
+                
                 object result = new DataTable().Compute(wordd, null);
 
 
@@ -54,7 +61,8 @@ namespace SpecialCalculator
 
 
                 }
-
+                
+                // this part wrote for test and will delete in final update
                 Console.Write(" " + javab + Environment.NewLine);
                 Console.WriteLine(javabha[i]);
 
@@ -63,17 +71,27 @@ namespace SpecialCalculator
 
         }
 
+        /// <summary>
+        /// final section that makes(not show) answer for output
+        /// </summary>
         public static void FinalSolve(string exp)
         {
             SolveInParentheses(exp);
         }
 
+        /// <summary>
+        /// this program saves previous activities and this method
+        /// saves each calculating in a file
+        /// </summary>
         public static void HistorySave(string mathExpression, double answer)
         {
             File.AppendAllText(historyFileName, mathExpression + " = " + answer + Environment.NewLine);
         }
 
-
+        /// <summary>
+        /// this method reads previous calculatings and stores thoes
+        /// in a string to ready for show
+        /// </summary>
         public static string HistoryShow()
         {
             string readFile = File.ReadAllText(historyFileName);
@@ -81,3 +99,4 @@ namespace SpecialCalculator
         }
     }
 }
+
