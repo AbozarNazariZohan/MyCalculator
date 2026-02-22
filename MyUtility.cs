@@ -32,7 +32,7 @@ namespace SpecialCalculator
         }
 
         /// <summary>
-        // calculates math expression in smallest parentheses 
+        /// calculates math expression in smallest parentheses 
         /// </summary>
         public static void SolveInParentheses(string exp)
         {
@@ -99,4 +99,5 @@ namespace SpecialCalculator
         }
     }
 }
+
 
