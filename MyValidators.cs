@@ -30,7 +30,8 @@ namespace SpecialCalculator
         {
             bool IsApproved = false;
 
-            // we should/can add new conditions with using "AND" operators
+            // we should/can add new conditions with using "AND" operators for
+            // develope or update program
             IsApproved = IsNumParenthesesEven(exp);
 
             return IsApproved;
@@ -84,3 +85,4 @@ namespace SpecialCalculator
 
     }
 }
+
