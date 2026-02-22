@@ -9,7 +9,7 @@ namespace SpecialCalculator
     internal class MyUtility
     {
         /// <summary>
-        ///  fetches tiny math exp from smallest couple parentheses
+        ///  It fetches tiny math exp from the smallest pair of parentheses
         /// that has highest priority
         /// </summary>
         public static string FindPriorityExp(string exp)
@@ -32,7 +32,7 @@ namespace SpecialCalculator
         }
 
         /// <summary>
-        /// calculates math expression in smallest parentheses 
+        /// It calculates math expression in the smallest parentheses 
         /// </summary>
         public static void SolveInParentheses(string exp)
         {
@@ -80,8 +80,8 @@ namespace SpecialCalculator
         }
 
         /// <summary>
-        /// this program saves previous activities and this method
-        /// saves each calculating in a file
+        /// This program saves previous activities and this method
+        /// saves each calculation to a file
         /// </summary>
         public static void HistorySave(string mathExpression, double answer)
         {
@@ -89,8 +89,8 @@ namespace SpecialCalculator
         }
 
         /// <summary>
-        /// this method reads previous calculatings and stores thoes
-        /// in a string to ready for show
+        /// This method reads previous calculation and stores it
+        /// in a string to prepare it for display
         /// </summary>
         public static string HistoryShow()
         {
@@ -99,5 +99,6 @@ namespace SpecialCalculator
         }
     }
 }
+
 
 
