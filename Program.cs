@@ -14,7 +14,7 @@ namespace SpecialCalculator
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // It builds a file to can keep previous calculatings
+            // It builds a file to can keep previous calculations
             UniversalSetting.CreateFile();
 
 
@@ -25,4 +25,5 @@ namespace SpecialCalculator
         }
     }
 }
+
 
