@@ -2,8 +2,12 @@
 
 namespace SpecialCalculator
 {
+    /// <summary>
+    /// this class wrote for all arithmetic (internal) commands
+    /// </summary>
     internal class Calculating
     {
+        // determines what operator perform first
         static int Priority(string oprtr)
         {
             if (oprtr == "+" || oprtr == "-") return 1;
@@ -118,3 +122,4 @@ namespace SpecialCalculator
         }
     }
 }
+
