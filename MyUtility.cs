@@ -10,7 +10,7 @@ namespace SpecialCalculator
     {
         /// <summary>
         ///  It fetches tiny math exp from the smallest pair of parentheses
-        /// that has highest priority
+        /// that has the highest priority
         /// </summary>
         public static string FindPriorityExp(string exp)
         {
@@ -99,6 +99,7 @@ namespace SpecialCalculator
         }
     }
 }
+
 
 
 
